@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Three numbers are: </h2>
+    <p id="numbers"></p>
+    <h2>Maximum number is: </h2>
+    <p id="max"></p>
+
+    <script>
+        let a = prompt('Enter 1st number:');
+        let b = prompt('Enter 2nd number:');
+        let c = prompt('Enter 3rd number:');
+        let x = a+' '+b+' '+c;
+        document.getElementById('numbers').innerText = x;
+        a = Number(a);
+        b = Number(b);
+        c = Number(c);
+        let maxNumber = a;
+
+        if (b > maxNumber) {
+            maxNumber = b;
+        }
+
+        if (c > maxNumber) {
+            maxNumber = c;
+        }
+        document.getElementById('max').innerText = maxNumber;
+        
+    </script>
+</body>
+</html>
